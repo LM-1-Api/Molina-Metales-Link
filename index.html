@@ -3,106 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
   <title>Molina Metales — Links oficiales</title>
-  <meta name="description" content="Todos los enlaces oficiales de Molina Metales: gráfico en vivo, WhatsApp, TikTok, Facebook, X y Threads.">
+  <meta name="description" content="Links oficiales de Molina Metales: gráfico en vivo de Oro & Plata, WhatsApp, TikTok, Facebook, X (Twitter), Threads y Catálogo.">
+
+  <!-- Favicon / OG -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <meta property="og:title" content="Molina Metales — Links oficiales" />
+  <meta property="og:description" content="Gráfico en vivo Oro & Plata + redes y contacto." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="theme-color" content="#0e1720" />
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Sprite de íconos (oculto) -->
-<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
-  <!-- WhatsApp -->
-  <symbol id="icon-wa" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10" fill="currentColor"/>
-    <path d="M16.9 13.6c-.2-.1-1.3-.6-1.5-.6-.2 0-.4 0-.6.3-.2.3-.7.9-.8 1-.2.2-.4.2-.7.1-.3-.1-1.2-.4-2.3-1.5-.8-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.2-.2.3-.3.3-.5s0-.4-.1-.6c-.1-.2-.6-1.3-.8-1.7-.2-.4-.4-.4-.6-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.4 3.3c.2.3 2.3 3.5 5.6 4.8.8.3 1.5.5 2 .6.8.1 1.6.1 2.2.1.7 0 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.7-.1 0-.2 0-.4-.1z" fill="#fff"/>
-  </symbol>
+  <header class="hero shell">
+    <img class="brand-logo" src="assets/logo.png" alt="Molina Metales" />
+    <h1 class="brand-title">Molina Metales</h1>
+    <p class="brand-sub">Lingotes · Oro &amp; Plata · Links oficiales</p>
+  </header>
 
-  <!-- TikTok (monocromo) -->
-  <symbol id="icon-tt" viewBox="0 0 24 24">
-    <path d="M14 3v7.5a4.5 4.5 0 1 1-4.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <path d="M14 6a6 6 0 0 0 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-
-  <!-- Facebook -->
-  <symbol id="icon-fb" viewBox="0 0 24 24">
-    <path d="M14 8h3V4h-3c-2.2 0-4 1.8-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8c0-.6.4-1 1-1Z" fill="currentColor"/>
-  </symbol>
-
-  <!-- X (Twitter) -->
-  <symbol id="icon-x" viewBox="0 0 24 24">
-    <path d="M3 3l18 18M21 3 3 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </symbol>
-
-  <!-- Threads -->
-  <symbol id="icon-th" viewBox="0 0 24 24">
-    <path d="M12 4c4.4 0 8 3.6 8 8s-3.1 8-8 8c-4.6 0-8-3.4-8-8 0-4.4 3.6-8 8-8Zm0 0c3.5 0 5.5 2.3 5.5 5.2 0 2.4-1.7 3.8-3.9 3.8H12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <path d="M12 13c-2 0-3-.9-3-2.3S10 8.5 12 8.5c1.8 0 3 .9 3 2.2 0 1.3-1.2 2.3-3 2.3Z" fill="currentColor" opacity=".2"/>
-  </symbol>
-
-  <!-- Carrito (Catálogo) -->
-  <symbol id="icon-cart" viewBox="0 0 24 24">
-    <path d="M7 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm9 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM6.2 6l.4 2H20l-1.6 7.1a1 1 0 0 1-1 .9H8.4a1 1 0 0 1-1-.8L5.3 5.3A1 1 0 0 0 4.3 4.5H3a1 1 0 1 1 0-2h2.1a2 2 0 0 1 2 1.6L7.3 6h-1z" fill="currentColor"/>
-  </symbol>
-</svg>
   <main class="shell">
-    <header class="hero">
-      <img src="assets/logo.png" alt="Molina Metales" class="logo" />
-      <h1>Molina Metales</h1>
-      <p class="tag">Lingotes · Oro &amp; Plata · Links oficiales</p>
-    </header>
+    <h2 class="section-title">Opciones</h2>
 
-    <section class="card">
-  <div class="card-head">Opciones</div>
-  <div class="tile-actions" style="display:flex;flex-wrap:wrap;gap:10px">
-    <!-- WhatsApp -->
-    <a class="btn primary with-icon brand-wa" id="btn-whatsapp" target="_blank" rel="noopener"
-       href="https://wa.me/5492215687369?text=Hola%20Molina%20Metales%2C%20quiero%20cotizar%20Oro%20XAU%2FUSD">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-wa"/></svg></span>
-      <span>WhatsApp</span>
-    </a>
+    <section class="links">
+      <!-- Gráfico Oro & Plata (usa TU logo como icono) -->
+      <a class="btn primary with-icon" target="_blank" rel="noopener"
+         href="https://lm-1-api.github.io/Molina-Metales-XAU/">
+        <img class="icon" src="assets/logo.png" alt="Molina Metales" />
+        <span>Gráfico Oro &amp; Plata (en vivo)</span>
+      </a>
 
-    <!-- TikTok -->
-    <a class="btn with-icon brand-tt" target="_blank" rel="noopener"
-       href="https://www.tiktok.com/@MolinaJoyero">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-tt"/></svg></span>
-      <span>TikTok</span>
-    </a>
+      <!-- WhatsApp -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://wa.me/5492215687369?text=Hola%20Molina%20Metales">
+        <img class="icon" src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" />
+        <span>WhatsApp</span>
+      </a>
 
-    <!-- Facebook -->
-    <a class="btn with-icon brand-fb" target="_blank" rel="noopener"
-       href="https://www.facebook.com/MolinaMetales">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-fb"/></svg></span>
-      <span>Facebook</span>
-    </a>
+      <!-- TikTok -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://www.tiktok.com/@MolinaJoyero">
+        <img class="icon" src="https://cdn.simpleicons.org/tiktok/FFFFFF" alt="TikTok" />
+        <span>TikTok</span>
+      </a>
 
-    <!-- X (Twitter) -->
-    <a class="btn with-icon brand-x" target="_blank" rel="noopener"
-       href="https://x.com/MolinaMetales">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-x"/></svg></span>
-      <span>X (Twitter)</span>
-    </a>
+      <!-- Facebook -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://www.facebook.com/MolinaMetales">
+        <img class="icon" src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook" />
+        <span>Facebook</span>
+      </a>
 
-    <!-- Threads -->
-    <a class="btn with-icon brand-th" target="_blank" rel="noopener"
-       href="https://www.threads.net/@MolinaMetales">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-th"/></svg></span>
-      <span>Threads</span>
-    </a>
+      <!-- X (Twitter) -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://x.com/MolinaMetales">
+        <img class="icon" src="https://cdn.simpleicons.org/x/FFFFFF" alt="X (Twitter)" />
+        <span>X (Twitter)</span>
+      </a>
 
-    <!-- Catálogo WhatsApp -->
-    <a class="btn with-icon" id="btn-catalogo" target="_blank" rel="noopener"
-       href="https://wa.me/c/5492215687369">
-      <span class="icon"><svg viewBox="0 0 24 24"><use href="#icon-cart"/></svg></span>
-      <span>Catálogo WhatsApp</span>
-    </a>
-  </div>
-</section>
+      <!-- Threads -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://www.threads.net/@MolinaMetales">
+        <img class="icon" src="https://cdn.simpleicons.org/threads/FFFFFF" alt="Threads" />
+        <span>Threads</span>
+      </a>
 
-    <footer class="foot">
-      <small>© <span id="year"></span> Molina Metales — Lujo e inversión</small>
-    </footer>
+      <!-- Catálogo WhatsApp (carrito simple en SVG inline) -->
+      <a class="btn with-icon" target="_blank" rel="noopener"
+         href="https://wa.me/c/5492215687369">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M7 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm9 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM6.2 6l.4 2H20l-1.6 7.1a1 1 0 0 1-1 .9H8.4a1 1 0 0 1-1-.8L5.3 5.3A1 1 0 0 0 4.3 4.5H3a1 1 0 1 1 0-2h2.1a2 2 0 0 1 2 1.6L7.3 6h-1z"/>
+        </svg>
+        <span>Catálogo WhatsApp</span>
+      </a>
+    </section>
   </main>
 
+  <footer class="shell foot">
+    <small>© <span id="year"></span> Molina Metales — Lujo e inversión</small>
+  </footer>
+
   <script>
+    // Año automático en el footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
